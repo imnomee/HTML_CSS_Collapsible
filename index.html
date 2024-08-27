@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Collapsible using HTML and CSS - Nomee</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <!-- Details is a valid tag, most of the new browsers support this tag
+      When we use Details, it will wrap all the content in a line and we can expand or collapse with a click -->
+        <!-- Documentations: https://www.w3schools.com/TAGS/tag_details.asp -->
+        <div class="header">
+            <nav>
+                <details closed>
+                    <summary>
+                        <p>User</p>
+                    </summary>
+                    <ul>
+                        <li>
+                            <details closed>
+                                <summary>Profiles</summary>
+                                <ul>
+                                    <li>Name</li>
+                                    <li>Password</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>Settings</li>
+                        <li>Sign Out</li>
+                    </ul>
+                </details>
+            </nav>
+            <h1>HTML CSS Collapsible</h1>
+        </div>
+
+        <!-- Using the javascript, we won't be using the following here but just know its there if you need it-->
+        <!-- <script>
+            let box1 = document.querySelector('.box1');
+            let box2 = document.querySelector('.box2');
+            box2.style.display = 'none';
+            box1.onclick = function () {
+                box2.style.display = 'block';
+            };
+        </script> -->
+    </body>
+</html>
